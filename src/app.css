@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-color: #E8EFFF;
+  --secondary-color: #005fcc;
+  --secondary-color-hover: #004391;
+  --tertiary-color: #D3A518;
+  --background-color: #ffffff;
+  --sidebar-color: #3e3e3e;
+  --row: #a7a7a7;
+  --text-error: rgb(255, 0, 0);
+  --text-color: #213547;
+  --fs-title: 3rem;
+  --fs-subtitle: 2rem;
+  --fs-text: 1rem;
+  --fs-small: .6rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #213547;
+    --background-color: #ffffff;
+    --sidebar-color: #3e3e3e;
+    --row: #a7a7a7; 
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: rgba(255, 255, 255, 0.87);
+    --background-color-light: #242222;
+    --sidebar-color: #444444;
+    --row: #616161;
+  }
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+a:hover, a:focus{
+  color: var(--secondary-color-hover);
+  filter: drop-shadow(0 0 0.25rem var(--secondary-color-hover));
+}
