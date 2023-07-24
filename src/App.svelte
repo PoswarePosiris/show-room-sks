@@ -14,8 +14,8 @@
   import { randomColor } from "./utils/randomColor";
 
   const setStore = async () => {
-    const t = await DataApi.getMacTheme();
-    theme.set(t);
+    // const t = await DataApi.getMacTheme();
+    // theme.set(t);
     const ordersList = await orderFetch();
     orders.set(ordersList);
     
@@ -102,7 +102,7 @@
 
 <div id="full_screnn">
   <Header />
-  <Banner />
+  <!-- <Banner /> -->
   <OrdersDisplay />
   <Important title={titleMoy} legend={legendMoy} important={importantMoy.toFixed(2) + '€'} target={1}/>
   <GraphPie title={title}  dataPoints={bestSell} target={2}/>
@@ -114,6 +114,6 @@
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
   }
 </style>
